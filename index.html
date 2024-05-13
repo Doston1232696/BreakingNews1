@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <nav>
+        <div class="main-nav container flex">
+            <a href="#" onclick="reload()" class="company-logo">
+                <img src="./assets/images (1).png" alt="company logo">
+            </a>
+            <div class="nav-links">
+                <ul class="flex">
+                    <li class="hover-link nav-item" id="ipl" onclick="onNavItemClick('ipl')">Sport</li>
+                    <li class="hover-link nav-item" id="finance" onclick="onNavItemClick('finance')">Finance</li>
+                    <li class="hover-link nav-item" id="politics" onclick="onNavItemClick('politics')">Politika</li>
+                </ul>
+            </div>
+            <div class="search-bar flex">
+                <input id="search-text" type="text" class="news-input" placeholder="e.g. Science">
+                <button id="search-button" class="search-button">Search</button>
+            </div>
+        </div>
+        
+    </nav>
+
+    <section>
+        <div class="logos">
+            <div class="logos-slide">
+                <img  src="assets/Flag_of_Uzbekistan.svg.png" alt="">
+                 <img src="assets/kazagistan.jpg" alt="">
+                 <img src="assets/Kirgiz.png" alt="">
+                 <img src="assets/Russia.png" alt="">
+                 <img src="assets/turkman.png" alt="">
+                 <img src="assets/Usa.png" alt="">
+            </div>
+            <div class="logos-slide">
+                <img  src="assets/Flag_of_Uzbekistan.svg.png" alt="">
+                 <img src="assets/kazagistan.jpg" alt="">
+                 <img src="assets/Kirgiz.png" alt="">
+                 <img src="assets/Russia.png" alt="">
+                 <img src="assets/turkman.png" alt="">
+                 <img src="assets/Usa.png" alt="">
+            </div>
+        </div>
+    </section>
+    
+    
+    <main>
+        <div class="cards-container container flex" id="cards-container">
+            
+            
+        </div>
+    </main>
+
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="news-image" id="news-img">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title">This is the Title</h3>
+                <h6 class="news-source" id="news-source">End Gadget 26/08/2024</h6>
+                <p class="news-desc" id="news-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae saepe quis voluptatum quisquam vitae doloremque facilis molestias quae ratione cumque!</p>
+            </div>
+        </div>
+    </template>
+
+    <footer> 
+        <div class="footerContainer">
+            <div class="socialIcons">
+                <a href="https://twitter.com/d_otkurov"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/invites/contact/?i=z8fexggtpaoh&utm_content=7macj7l"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://twitter.com/d_otkurov"><i class="fa-brands fa-facebook"></i></a>
+                <a href="@134Blackninj1"><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://t.me/Doston_akken"><i class="fa-brands fa-telegram"></i></a>
+            </div>
+            <div class="footerNav">
+                <ul class="flex">
+                    <li class="" id="ipl" onclick="onNavItemClick('ipl')">IPL</li>
+                    <li class="" id="finance" onclick="onNavItemClick('finance')">Finance</li>
+                    <li class="" id="politics" onclick="onNavItemClick('politics')">Politics</li>
+                    <li class="" id="contact" oncanplay="onNavItemClick('770084718')">Contact</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footerBottom">
+            <p>CopyRight &copy;2024; Designed by <span class="designer">Doston_Codder</span> </p>
+        </div>
+        
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
